@@ -30,7 +30,7 @@ const FixedLinks = () => {
       ),
     },
     {
-      href: "https://linkedin.com",
+      href: "https://www.linkedin.com",
       icon: (
         <svg
           width="46"
@@ -51,7 +51,7 @@ const FixedLinks = () => {
       ),
     },
     {
-      href: "https://gitlab.com",
+      href: "https://www.facebook.com",
       icon: (
         <svg
           width="46"

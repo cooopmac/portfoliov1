@@ -13,7 +13,7 @@ const App = () => {
         <div id="home">
           <HomePage />
         </div>
-        <div className="z-50">
+        <div className="z-50 invisible lg:visible">
           <FixedLinks />
         </div>
       </div>
