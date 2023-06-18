@@ -1,11 +1,9 @@
 import React, { useEffect } from "react";
-import { motion, AnimatePresence, useAnimation } from "framer-motion";
-import Gradient from "rgt";
 
 const FixedLinks = () => {
   const links = [
     {
-      href: "https://github.com",
+      href: "https://github.com/cooopmac",
       icon: (
         <svg
           width="46"
