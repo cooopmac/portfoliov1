@@ -7,7 +7,7 @@ const WorkCard = ({
   description,
   stackUsed,
   image,
-  githublink,
+  githubLink,
   websiteLink,
 }) => {
   return (
@@ -18,10 +18,14 @@ const WorkCard = ({
           src={image}
         />
         <div className="pt-7 text-[24px] flex justify-center items-center gap-5">
-          <a href={githublink} target="_blank">
+          <a href={githubLink} target="_blank">
             <FaGithub className="text-gray-400 transition-colors hover:text-[#37AA9C] cursor-pointer duration-300" />
           </a>
-          <a className="text-gray-400 transition-colors hover:text-[#37AA9C] cursor-pointer duration-300">
+          <a
+            href={websiteLink}
+            className="text-gray-400 transition-colors hover:text-[#37AA9C] cursor-pointer duration-300"
+            target="_blank"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

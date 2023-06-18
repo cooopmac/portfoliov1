@@ -1,6 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 import { useState } from "react";
-import { Navbar, HomePage, WorkPage } from "./components";
+import { Navbar, HomePage, WorkPage, AboutPage } from "./components";
 import FixedLinks from "./components/FixedLinks";
 
 const App = () => {
@@ -15,6 +15,11 @@ const App = () => {
         </div>
         <div className="z-50">
           <FixedLinks />
+        </div>
+      </div>
+      <div className="relative bg-[#1A1A1B]">
+        <div id="about">
+          <AboutPage />
         </div>
       </div>
       <div className="relative bg-[#1A1A1B]">
