@@ -74,7 +74,7 @@ const FixedLinks = () => {
   ];
 
   return (
-    <div className="fixed bottom-0 right-0 mr-10 flex flex-col items-center gap-8 cursor-pointer z-50">
+    <div className="fixed bottom-0 left-0 ml-5 flex flex-col items-center gap-8 cursor-pointer z-50">
       {links.map((link) => (
         <a
           key={link.href}
