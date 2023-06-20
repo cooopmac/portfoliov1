@@ -3,15 +3,20 @@ import { Link } from "react-router-dom";
 import navLinks from "../constants";
 import Gradient from "rgt";
 
-const Navbar = ({ sectionId }) => {
+const Navbar = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
+  const [showDiv, setShowDiv] = useState(false); // New state for div visibility
 
   const handleScroll = (targetId) => {
     const targetElement = document.getElementById(targetId);
     if (targetElement) {
       targetElement.scrollIntoView(targetId);
     }
+  };
+
+  const handleHamburgerClick = () => {
+    setShowDiv(!showDiv);
   };
 
   useEffect(() => {
@@ -26,7 +31,7 @@ const Navbar = ({ sectionId }) => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [prevScrollPos]);
+  }, []);
 
   return (
     <nav
@@ -50,7 +55,7 @@ const Navbar = ({ sectionId }) => {
             </Gradient>
           </p>
         </Link>
-        <ul className="list-none hidden sm:flex flex-row gap-10 text-[24px] font-bold cursor-pointer items-center">
+        <ul className="list-none hidden md:flex flex-row gap-10 text-[24px] font-bold cursor-pointer items-center">
           {navLinks.map((nav) => (
             <li
               key={nav.id}
@@ -69,6 +74,25 @@ const Navbar = ({ sectionId }) => {
             </p>
           </button>
         </ul>
+        <div
+          className="hover:bg-white/[.05] p-2 rounded-lg md:hidden"
+          onClick={handleHamburgerClick}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth="1.5" // Use strokeWidth instead of stroke-width
+            stroke="white"
+            className="w-6 h-6" // Use className instead of class
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </div>
       </div>
     </nav>
   );

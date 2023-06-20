@@ -6,7 +6,7 @@ import FixedLinks from "./FixedLinks";
 
 const about = () => {
   return (
-    <section className="relative w-full h-screen mt-20 md:mt-0">
+    <section className="relative w-full h-screen md:mt-0">
       <div className="absolute inset-0 max-w-7xl mx-auto flex flex-row gap-5 px-[120px] items-center justify-center md:justify-start">
         <div>
           <p className="text-[#37AA9C] text-[18px] font-light">
