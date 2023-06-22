@@ -1,8 +1,5 @@
 import React, { useEffect } from "react";
-import { motion, AnimatePresence, useAnimation } from "framer-motion";
 import Gradient from "rgt";
-import { FaGithub, FaLinkedin, FaGitlab } from "react-icons/fa";
-import FixedLinks from "./FixedLinks";
 
 const about = () => {
   return (

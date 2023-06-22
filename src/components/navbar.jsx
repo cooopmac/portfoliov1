@@ -6,7 +6,7 @@ import Gradient from "rgt";
 const Navbar = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
-  const [showDiv, setShowDiv] = useState(false); // New state for div visibility
+  const [toggle, setToggle] = useState(false); // New state for div visibility
 
   const handleScroll = (targetId) => {
     const targetElement = document.getElementById(targetId);
@@ -15,21 +15,18 @@ const Navbar = () => {
     }
   };
 
-  const handleHamburgerClick = () => {
-    setShowDiv(!showDiv);
-  };
-
   useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollPos = window.pageYOffset;
-      setVisible(prevScrollPos > currentScrollPos || currentScrollPos === 0);
+    const handleNav = () => {
+      const currentScrollPos = window.scrollY;
+      console.log(currentScrollPos);
+      setVisible(currentScrollPos < prevScrollPos || currentScrollPos === 0);
       setPrevScrollPos(currentScrollPos);
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleNav);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", handleNav);
     };
   }, []);
 
@@ -74,10 +71,7 @@ const Navbar = () => {
             </p>
           </button>
         </ul>
-        <div
-          className="hover:bg-white/[.05] p-2 rounded-lg md:hidden"
-          onClick={handleHamburgerClick}
-        >
+        <div className="hover:bg-white/[.05] p-2 rounded-lg md:hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -85,6 +79,9 @@ const Navbar = () => {
             strokeWidth="1.5" // Use strokeWidth instead of stroke-width
             stroke="white"
             className="w-6 h-6" // Use className instead of class
+            onClick={() => {
+              setToggle(!toggle);
+            }}
           >
             <path
               strokeLinecap="round"
@@ -92,6 +89,27 @@ const Navbar = () => {
               d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
             />
           </svg>
+          <div className={`${!toggle ? "hidden" : "flex"} p-6 top-20 z-30`}>
+            <ul className="list-none flex flex-col justify-end items-start gap-5 text-[24px] font-bold cursor-pointer">
+              {navLinks.map((nav) => (
+                <li
+                  key={nav.id}
+                  className="text-[#37AA9C] transition ease-in-out hover:translate-y-[-4px]"
+                >
+                  <Link to={`#${nav.id}`} onClick={() => handleScroll(nav.id)}>
+                    {nav.name}
+                  </Link>
+                </li>
+              ))}
+              <button className="px-4 py-2 border border-[#37AA9C] rounded-lg font-normal text-[18px] transition ease-in-out hover:bg-white/[.05] ">
+                <p className="text-white">
+                  <Gradient dir="left-to-right" from="#37AA9C" to="#94F3E4">
+                    Resume
+                  </Gradient>
+                </p>
+              </button>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
