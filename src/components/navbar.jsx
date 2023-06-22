@@ -64,11 +64,15 @@ const Navbar = () => {
             </li>
           ))}
           <button className="px-4 py-2 border border-[#37AA9C] rounded-lg font-normal text-[18px] transition ease-in-out hover:bg-white/[.05] ">
-            <p className="text-white">
+            <a
+              href="src\assets\Resume - Cooper MacGregor.pdf"
+              download="Cooper MacGregor Resume"
+              className="text-white"
+            >
               <Gradient dir="left-to-right" from="#37AA9C" to="#94F3E4">
                 Resume
               </Gradient>
-            </p>
+            </a>
           </button>
         </ul>
         <div className="hover:bg-white/[.05] p-2 rounded-lg md:hidden">
@@ -102,11 +106,15 @@ const Navbar = () => {
                 </li>
               ))}
               <button className="px-4 py-2 border border-[#37AA9C] rounded-lg font-normal text-[18px] transition ease-in-out hover:bg-white/[.05] ">
-                <p className="text-white">
+                <a
+                  className="text-white"
+                  href="src\assets\Resume - Cooper MacGregor.pdf"
+                  download="Cooper MacGregor Resume"
+                >
                   <Gradient dir="left-to-right" from="#37AA9C" to="#94F3E4">
                     Resume
                   </Gradient>
-                </p>
+                </a>
               </button>
             </ul>
           </div>

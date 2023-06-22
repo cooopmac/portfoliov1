@@ -40,10 +40,10 @@ const WorkPage = () => {
           />
           <WorkCard
             projectName="cooper macgregor .com"
-            description="my portfolio website, created in React and tailwind. My first real react project fully designed and coded by me. incorporates framer motion for animations."
+            description="my portfolio website, created in React and tailwind. My first real react project fully designed and coded by me."
             stackUsed="react - tailwind - vite"
             image="src/assets/port-screenshot.png"
-            githubLink=""
+            githubLink="https://github.com/cooopmac/portfoliov1"
             websiteLink=""
           />
         </div>
