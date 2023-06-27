@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import navLinks from "../constants";
 import Gradient from "rgt";
+import resume from "../../public/images/Resume - Cooper MacGregor.pdf";
 
 const Nav = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -109,7 +110,7 @@ const Nav = () => {
               <button className="px-4 py-2 border border-[#37AA9C] rounded-lg font-normal text-[18px] transition ease-in-out hover:bg-white/[.05] ">
                 <a
                   className="text-white"
-                  href="src\assets\Resume - Cooper MacGregor.pdf"
+                  href={resume}
                   download="Cooper MacGregor Resume"
                 >
                   <Gradient dir="left-to-right" from="#37AA9C" to="#94F3E4">
