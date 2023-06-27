@@ -52,15 +52,18 @@ const ContactPage = () => {
   };
 
   return (
-    <section className="relative w-full h-screen">
+    <section className="relative w-full h-screen mb-10">
+      <div className="flex justify-center">
+        <hr className="w-3/4" />
+      </div>
       <div className="flex justify-center pt-[100px]">
         <h1 className="text-[48px] font-bold text-white">Get In Touch.</h1>
       </div>
-      <div className="shadow-md shadow-black/50 border border-[#94F3E4] flex flex-col rounded-lg p-5 mx-5 md:mx-40">
+      <div className="bg-[#252526] shadow-md shadow-black/50 border border-[#94F3E4] flex flex-col rounded-lg p-5 mx-5 md:mx-40">
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className="my-12 flex-col gap-8"
+          className="my-4 flex-col gap-8"
         >
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your name</span>

@@ -10,7 +10,7 @@ const WorkCard = ({
   websiteLink,
 }) => {
   return (
-    <div className="h-auto flex bg-[#1A1A1B] border border-[#0d2925] rounded-lg overflow-hidden shadow-md shadow-black/50 px-4 py-2 items-center transition ease-in-out hover:translate-y-[-4px] hover:translate-x-0.5 hover:bg-white/[.05] cursor-pointer">
+    <div className="h-auto flex bg-[#252526] border border-[#0d2925] rounded-lg overflow-hidden shadow-md shadow-black/50 px-4 py-2 items-center transition ease-in-out hover:translate-y-[-4px] hover:translate-x-0.5 hover:bg-white/[.05] cursor-pointer">
       <div className="pr-4">
         <img
           className="max-w-lg w-[175px] h-[100px] border border-gray-200 rounded-lg"

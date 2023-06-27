@@ -9,6 +9,9 @@ import portfolio from "../../public/images/port-screenshot.png";
 const WorkPage = () => {
   return (
     <section className="relative w-full mx-auto pb-[100px] pt-12">
+      <div className="flex justify-center">
+        <hr className="w-3/4" />
+      </div>
       <div className="flex flex-col md:flex-row justify-around items-center">
         <div className="items-center flex flex-col pt-[100px] gap-10 md:pl-20">
           <h1 className="text-[48px] font-bold text-white">My Work.</h1>

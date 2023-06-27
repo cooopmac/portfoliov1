@@ -16,7 +16,7 @@ const HomePage = () => {
   };
 
   return (
-    <section className="relative w-full h-screen md:mt-0">
+    <section className="relative w-full h-screen md:mt-0 mt-20">
       <style>
         {`
         @keyframes fade-in {
