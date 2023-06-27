@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import avatar from "../../public/images/AvatarMaker.svg";
 
 const AboutPage = () => {
   const [fadeOpacity, setFadeOpacity] = useState(0);
@@ -55,11 +56,7 @@ const AboutPage = () => {
         className="rounded-lg bg-[#37AA9C] p-5 flex justify-center mr-20"
         style={{ opacity: fadeOpacity, transition: "opacity 0.5s" }}
       >
-        <img
-          src="/public/AvatarMaker.svg"
-          alt="headshot"
-          className="m-5 rounded-lg"
-        />
+        <img src={avatar} alt="headshot" className="m-5 rounded-lg" />
       </div>
     </section>
   );
