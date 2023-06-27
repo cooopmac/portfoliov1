@@ -1,6 +1,7 @@
 import React from "react";
 import { HiArrowRight } from "react-icons/hi";
 import WorkCard from "./WorkCard";
+import workpic from "../../public/images/undraw_programming_re_kg9v.svg";
 
 const WorkPage = () => {
   return (
@@ -9,7 +10,7 @@ const WorkPage = () => {
         <div className="items-center flex flex-col pt-[100px] gap-10 pl-20">
           <h1 className="text-[48px] font-bold text-white">My Work.</h1>
           <div className="flex w-[400px]">
-            <img src="src\assets\undraw_programming_re_kg9v.svg" />
+            <img src={workpic} />
           </div>
           <div className="pt-5 flex items-center">
             <p className="text-[#37AA9C] text-[18px] font-light">
@@ -26,7 +27,7 @@ const WorkPage = () => {
             projectName="The Lazarus Method"
             description="a web-app created for Dr. Ryan Lazarus to be used with his clients, all frontend development (not design) was coded by me. the used of chart.js was also incorporated into the page."
             stackUsed="html - css - javascript - chart.js"
-            image="src/assets/lazarus-screenshot.png"
+            image="../../public/images/lazarus-screenshot.png"
             githubLink="https://github.com/justinbather/lazarus-method"
             websiteLink="https://lazarus-method.herokuapp.com/accounts/login/"
           />
@@ -34,7 +35,7 @@ const WorkPage = () => {
             projectName="Molecule Generator"
             description="a fullstack application created solely by me, allows users to upload sdf files of their favourite molecule, save them to a database, apply custom colors for atoms, and have them displayed as an svg file."
             stackUsed="c - python - html - css - javascript"
-            image="src/assets/molecule-github.png"
+            image="../../public/images/molecule-github.png"
             githubLink=""
             websiteLink=""
           />
@@ -42,7 +43,7 @@ const WorkPage = () => {
             projectName="cooper macgregor .com"
             description="my portfolio website, created in React and tailwind. My first real react project fully designed and coded by me."
             stackUsed="react - tailwind - vite"
-            image="src/assets/port-screenshot.png"
+            image="../../public/images/port-screenshot.png"
             githubLink="https://github.com/cooopmac/portfoliov1"
             websiteLink=""
           />
