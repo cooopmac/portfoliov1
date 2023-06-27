@@ -42,7 +42,7 @@ const WorkPage = () => {
             description="a fullstack application created solely by me, allows users to upload sdf files of their favourite molecule, save them to a database, apply custom colors for atoms, and have them displayed as an svg file."
             stackUsed="c - python - html - css - javascript"
             image={molecule}
-            githubLink=""
+            githubLink="https://github.com/cooopmac/moleculegenerator"
             websiteLink=""
           />
           <WorkCard
