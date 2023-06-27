@@ -1,6 +1,16 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 const FixedLinks = () => {
+  const [animate, setAnimate] = useState(false);
+
+  useEffect(() => {
+    setAnimate(true);
+  }, []);
+
+  const slideInStyles = {
+    animation: animate ? "slide-in 0.5s ease-in-out forwards" : "none",
+  };
+
   const links = [
     {
       href: "https://github.com/cooopmac",
@@ -30,7 +40,7 @@ const FixedLinks = () => {
       ),
     },
     {
-      href: "https://www.linkedin.com",
+      href: "https://www.linkedin.com/in/cooper-macgregor/",
       icon: (
         <svg
           width="46"
@@ -74,7 +84,10 @@ const FixedLinks = () => {
   ];
 
   return (
-    <div className="fixed bottom-0 left-0 ml-5 flex flex-col items-center gap-8 cursor-pointer z-50">
+    <div
+      className="fixed bottom-0 left-0 ml-5 flex flex-col items-center gap-8 cursor-pointer z-50"
+      style={slideInStyles}
+    >
       {links.map((link) => (
         <a
           key={link.href}
@@ -86,6 +99,20 @@ const FixedLinks = () => {
         </a>
       ))}
       <div className="w-1 h-40 bg-gradient-to-r from-[#37AA9C] to-[#94F3E4]" />
+      <style>
+        {`
+          @keyframes slide-in {
+            from {
+              transform: translateX(-100%);
+              opacity: 0;
+            }
+            to {
+              transform: translateX(0);
+              opacity: 1;
+            }
+          }
+        `}
+      </style>
     </div>
   );
 };

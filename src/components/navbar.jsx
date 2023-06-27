@@ -16,19 +16,20 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    const handleNav = () => {
-      const currentScrollPos = window.scrollY;
-      //console.log(currentScrollPos);
-      setVisible(currentScrollPos < prevScrollPos || currentScrollPos === 0);
+    const handleScrollNav = () => {
+      const currentScrollPos = window.pageYOffset;
+      const isVisible = prevScrollPos > currentScrollPos;
+
       setPrevScrollPos(currentScrollPos);
+      setVisible(isVisible);
     };
 
-    window.addEventListener("scroll", handleNav);
+    window.addEventListener("scroll", handleScrollNav);
 
     return () => {
-      window.removeEventListener("scroll", handleNav);
+      window.removeEventListener("scroll", handleScrollNav);
     };
-  }, []);
+  }, [prevScrollPos]);
 
   return (
     <nav

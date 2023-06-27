@@ -1,11 +1,36 @@
 import React from "react";
+import { useState, useEffect } from "react";
 
 const AboutPage = () => {
+  const [fadeOpacity, setFadeOpacity] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const fadeInOffset = window.innerHeight * 0.5; // Adjust the offset as needed
+
+      if (scrollPosition > fadeInOffset) {
+        setFadeOpacity(1);
+      } else {
+        setFadeOpacity(0);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <section className="h-fixed relative flex flex-col justify-center items-center md:flex-row p-10 md:pl-20">
-      <div className="w-full md:w-1/2 flex flex-col items-center justify-center p-8">
+    <section className="h-fixed relative flex flex-col justify-center items-center md:flex-row p-10">
+      <div
+        className="w-full md:w-1/2 flex flex-col items-center justify-center p-8"
+        style={{ opacity: fadeOpacity, transition: "opacity 0.5s" }}
+      >
         <h1 className="text-white text-[48px] font-bold">About Me.</h1>
-        <p className="text-gray-400">
+        <p className="text-gray-400 max-w-md">
           Hey, I'm Cooper, a passionate student at the{" "}
           <span className="text-[#37AA9C]">University of Guelph. </span>
           Computers have been my lifelong fascination, and I'm currently
@@ -26,7 +51,10 @@ const AboutPage = () => {
           to make a meaningful impact in the world of software development.
         </p>
       </div>
-      <div className="rounded-lg bg-[#37AA9C] p-5 flex justify-center">
+      <div
+        className="rounded-lg bg-[#37AA9C] p-5 flex justify-center mr-20"
+        style={{ opacity: fadeOpacity, transition: "opacity 0.5s" }}
+      >
         <img
           src="src\assets\AvatarMaker.svg"
           alt="headshot"

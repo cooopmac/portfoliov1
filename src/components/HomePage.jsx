@@ -1,11 +1,30 @@
 import React, { useEffect } from "react";
 import Gradient from "rgt";
 
-const about = () => {
+const HomePage = () => {
+  const fadeAnimation = {
+    opacity: 0,
+    animation: "fade-in 1s ease-in-out forwards",
+  };
+
   return (
     <section className="relative w-full h-screen md:mt-0">
+      <style>
+        {`
+        @keyframes fade-in {
+          0% {
+            opacity: 0;
+            transform: translateY(10px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        `}
+      </style>
       <div className="absolute inset-0 max-w-7xl mx-auto flex flex-row gap-5 px-[120px] items-center justify-center md:justify-start">
-        <div>
+        <div style={fadeAnimation}>
           <p className="text-[#37AA9C] text-[18px] font-light">
             Hi, my name is
           </p>
@@ -34,4 +53,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default HomePage;
