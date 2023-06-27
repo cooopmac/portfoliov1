@@ -56,7 +56,7 @@ const AboutPage = () => {
         style={{ opacity: fadeOpacity, transition: "opacity 0.5s" }}
       >
         <img
-          src="../assets/AvatarMaker.svg"
+          src="/assets/AvatarMaker.svg"
           alt="headshot"
           className="m-5 rounded-lg"
         />
