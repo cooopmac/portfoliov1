@@ -1,12 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 import { useState } from "react";
-import {
-  Navbar,
-  HomePage,
-  WorkPage,
-  AboutPage,
-  ContactPage,
-} from "./components";
+import { Nav, HomePage, WorkPage, AboutPage, ContactPage } from "./components";
 import FixedLinks from "./components/FixedLinks";
 
 const App = () => {
