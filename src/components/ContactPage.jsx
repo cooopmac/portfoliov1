@@ -56,7 +56,7 @@ const ContactPage = () => {
       <div className="flex justify-center pt-[100px]">
         <h1 className="text-[48px] font-bold text-white">Get In Touch.</h1>
       </div>
-      <div className="shadow-md shadow-black/50 border border-[#94F3E4] flex flex-col rounded-lg p-5 mx-40">
+      <div className="shadow-md shadow-black/50 border border-[#94F3E4] flex flex-col rounded-lg p-5 mx-5 md:mx-40">
         <form
           ref={formRef}
           onSubmit={handleSubmit}

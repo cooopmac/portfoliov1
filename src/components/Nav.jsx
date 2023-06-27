@@ -107,15 +107,15 @@ const Nav = () => {
                 </li>
               ))}
               <button className="px-4 py-2 border border-[#37AA9C] rounded-lg font-normal text-[18px] transition ease-in-out hover:bg-white/[.05]">
-                <Link
+                <a
                   className="text-white"
-                  to="/public/images/resume.pdf"
+                  href="../../public/images/resume.pdf"
                   download="Cooper MacGregor Resume"
                 >
                   <Gradient dir="left-to-right" from="#37AA9C" to="#94F3E4">
                     Resume
                   </Gradient>
-                </Link>
+                </a>
               </button>
             </ul>
           </div>

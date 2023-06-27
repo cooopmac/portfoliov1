@@ -30,7 +30,9 @@ const AboutPage = () => {
         className="w-full md:w-1/2 flex flex-col items-center justify-center p-8"
         style={{ opacity: fadeOpacity, transition: "opacity 0.5s" }}
       >
-        <h1 className="text-white text-[48px] font-bold">About Me.</h1>
+        <h1 className="text-white text-[36px] md:text-[48px] font-bold">
+          About Me.
+        </h1>
         <p className="text-gray-400 max-w-md">
           Hey, I'm Cooper, a passionate student at the{" "}
           <span className="text-[#37AA9C]">University of Guelph. </span>
@@ -53,7 +55,7 @@ const AboutPage = () => {
         </p>
       </div>
       <div
-        className="rounded-lg bg-[#37AA9C] p-5 flex justify-center mr-20"
+        className="rounded-lg bg-[#37AA9C] p-5 flex justify-center md:mr-20"
         style={{ opacity: fadeOpacity, transition: "opacity 0.5s" }}
       >
         <img src={avatar} alt="headshot" className="m-5 rounded-lg" />

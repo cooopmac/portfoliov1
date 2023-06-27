@@ -10,7 +10,7 @@ const WorkPage = () => {
   return (
     <section className="relative w-full mx-auto pb-[100px] pt-12">
       <div className="flex flex-col md:flex-row justify-around items-center">
-        <div className="items-center flex flex-col pt-[100px] gap-10 pl-20">
+        <div className="items-center flex flex-col pt-[100px] gap-10 md:pl-20">
           <h1 className="text-[48px] font-bold text-white">My Work.</h1>
           <div className="flex w-[400px]">
             <img src={workpic} />
@@ -28,7 +28,7 @@ const WorkPage = () => {
         <div className="max-w-lg flex flex-col gap-5 pt-[100px] px-10 md:px-0">
           <WorkCard
             projectName="The Lazarus Method"
-            description="a web-app created for Dr. Ryan Lazarus to be used with his clients, all frontend development (not design) was coded by me. the used of chart.js was also incorporated into the page."
+            description="a web-app created for Dr. Ryan Lazarus to be used with his clients, all frontend development (not design) was coded by me. the use of chart.js was also incorporated into the page."
             stackUsed="html - css - javascript - chart.js"
             image={lazarus}
             githubLink="https://github.com/justinbather/lazarus-method"
@@ -48,7 +48,7 @@ const WorkPage = () => {
             stackUsed="react - tailwind - vite"
             image={portfolio}
             githubLink="https://github.com/cooopmac/portfoliov1"
-            websiteLink=""
+            websiteLink="https://cooper-macgregor.netlify.app/"
           />
         </div>
       </div>
