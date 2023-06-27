@@ -1,4 +1,4 @@
-import Nav from "./Navbar";
+import Nav from "./Nav";
 import HomePage from "./HomePage";
 import WorkPage from "./WorkPage";
 import AboutPage from "./AboutPage";
