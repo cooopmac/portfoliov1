@@ -15,7 +15,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className="relative bg-[#1A1A1B]">
-        <Navbar sectionIds={sectionIds} />
+        <Nav sectionIds={sectionIds} />
         <div id="home">
           <HomePage />
         </div>

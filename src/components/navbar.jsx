@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import navLinks from "../constants";
 import Gradient from "rgt";
 
-const Navbar = () => {
+const Nav = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
   const [toggle, setToggle] = useState(false); // New state for div visibility
@@ -125,4 +125,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Nav;
