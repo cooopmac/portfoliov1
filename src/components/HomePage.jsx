@@ -1,7 +1,15 @@
 import React, { useEffect } from "react";
 import Gradient from "rgt";
+import navLinks from "../constants";
 
 const HomePage = () => {
+  const handleScroll = () => {
+    const targetElement = document.getElementById("contact");
+    if (targetElement) {
+      targetElement.scrollIntoView();
+    }
+  };
+
   const fadeAnimation = {
     opacity: 0,
     animation: "fade-in 1s ease-in-out forwards",
@@ -40,7 +48,10 @@ const HomePage = () => {
             development and a specialization in front-end technologies like
             React.
           </p>
-          <button className="mt-6 px-6 py-2 rounded-lg border border-[#37AA9C] transition ease-in-out hover:bg-white/[.05]">
+          <button
+            onClick={handleScroll}
+            className="mt-6 px-6 py-2 rounded-lg border border-[#37AA9C] transition ease-in-out hover:bg-white/[.05]"
+          >
             <p className="text-white font-normal">
               <Gradient dir="left-to-right" from="#37AA9C" to="#94F3E4">
                 Let's Talk
