@@ -2,6 +2,9 @@ import React from "react";
 import { HiArrowRight } from "react-icons/hi";
 import WorkCard from "./WorkCard";
 import workpic from "../../public/images/undraw_programming_re_kg9v.svg";
+import lazarus from "../../public/images/lazarus-screenshot.png";
+import molecule from "../../public/images/molecule-github.png";
+import portfolio from "../../public/images/port-screenshot.png";
 
 const WorkPage = () => {
   return (
@@ -27,7 +30,7 @@ const WorkPage = () => {
             projectName="The Lazarus Method"
             description="a web-app created for Dr. Ryan Lazarus to be used with his clients, all frontend development (not design) was coded by me. the used of chart.js was also incorporated into the page."
             stackUsed="html - css - javascript - chart.js"
-            image="../../public/images/lazarus-screenshot.png"
+            image={lazarus}
             githubLink="https://github.com/justinbather/lazarus-method"
             websiteLink="https://lazarus-method.herokuapp.com/accounts/login/"
           />
@@ -35,7 +38,7 @@ const WorkPage = () => {
             projectName="Molecule Generator"
             description="a fullstack application created solely by me, allows users to upload sdf files of their favourite molecule, save them to a database, apply custom colors for atoms, and have them displayed as an svg file."
             stackUsed="c - python - html - css - javascript"
-            image="../../public/images/molecule-github.png"
+            image={molecule}
             githubLink=""
             websiteLink=""
           />
@@ -43,7 +46,7 @@ const WorkPage = () => {
             projectName="cooper macgregor .com"
             description="my portfolio website, created in React and tailwind. My first real react project fully designed and coded by me."
             stackUsed="react - tailwind - vite"
-            image="../../public/images/port-screenshot.png"
+            image={portfolio}
             githubLink="https://github.com/cooopmac/portfoliov1"
             websiteLink=""
           />
