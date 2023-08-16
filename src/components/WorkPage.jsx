@@ -31,8 +31,8 @@ const WorkPage = () => {
         <div className="max-w-lg flex flex-col gap-5 pt-[100px] px-10 md:px-0">
           <WorkCard
             projectName="The Lazarus Method"
-            description="a web-app created for Dr. Ryan Lazarus to be used with his clients, all frontend development (not design) was coded by me. the use of chart.js was also incorporated into the page."
-            stackUsed="html - css - javascript - chart.js"
+            description="A web-app created for Dr. Ryan Lazarus to be used with his clients allows users to track their progress and see the chnages they've made throughout."
+            stackUsed="django - css - javascript - chart.js"
             image={lazarus}
             githubLink="https://github.com/justinbather/lazarus-method"
             websiteLink="https://lazarus-method.herokuapp.com/accounts/login/"
@@ -46,8 +46,8 @@ const WorkPage = () => {
             websiteLink=""
           />
           <WorkCard
-            projectName="cooper macgregor .com"
-            description="my portfolio website, created in React and tailwind. My first real react project fully designed and coded by me."
+            projectName="cooper-macgregor.com"
+            description="My portfolio website, created in React and tailwind. My first real react project fully designed and created by me."
             stackUsed="react - tailwind - vite"
             image={portfolio}
             githubLink="https://github.com/cooopmac/portfoliov1"
