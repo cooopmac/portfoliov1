@@ -42,7 +42,7 @@ const WorkPage = () => {
             description="A fullstack camping application that streamlines the booking process for campgrounds and allows users to easily book campsites utilizing a REST API created by me and a friend, stripe and react for the frontend."
             stackUsed="django - react - tailwind - postgreSQL"
             image={molecule}
-            githubLink="https://github.com/justin-bather/campsitemanagementsystem"
+            githubLink="https://github.com/justinbather/campsitemanagementsystem"
             websiteLink=""
           />
           <WorkCard
