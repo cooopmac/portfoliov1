@@ -31,7 +31,7 @@ const WorkPage = () => {
         <div className="max-w-lg flex flex-col gap-5 pt-[100px] px-10 md:px-0">
           <WorkCard
             projectName="The Lazarus Method"
-            description="A web-app created for Dr. Ryan Lazarus to be used with his clients allows users to track their progress and see the changes they've made throughout the program."
+            description="This app helps patients in the program track their progress through questionnaires and physical test results that provide a score based on 7 categories of their health. The patients check off tasks associated with their current belt (or level) and upon completion of each belt they are posed with a new questionnaire to update their wellness scores."
             stackUsed="django - css - javascript - chart.js"
             image={lazarus}
             githubLink="https://github.com/justinbather/lazarus-method"
