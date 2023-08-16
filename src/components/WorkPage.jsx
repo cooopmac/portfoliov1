@@ -38,11 +38,11 @@ const WorkPage = () => {
             websiteLink="https://lazarus-method.herokuapp.com/accounts/login/"
           />
           <WorkCard
-            projectName="Molecule Generator"
-            description="a fullstack application created solely by me, allows users to upload sdf files of their favourite molecule, save them to a database, apply custom colors for atoms, and have them displayed as an svg file."
-            stackUsed="c - python - html - css - javascript"
+            projectName="GoCamp!"
+            description="A fullstack camping application that streamlines the booking process for campgrounds and allows users to easily book campsites utilizing a REST API created by me and a friend, stripe and react for the frontend."
+            stackUsed="django - react - tailwind - postgreSQL"
             image={molecule}
-            githubLink="https://github.com/cooopmac/moleculegenerator"
+            githubLink="https://github.com/justin-bather/campsitemanagementsystem"
             websiteLink=""
           />
           <WorkCard
