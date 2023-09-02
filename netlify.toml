@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/public/images/resume.pdf"
+  to = "https://cooper-macgregor.netlify.app/public/images/resume.pdf"
+  status = 200
