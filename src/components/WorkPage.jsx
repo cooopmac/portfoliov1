@@ -3,7 +3,7 @@ import { HiArrowRight } from "react-icons/hi";
 import WorkCard from "./WorkCard";
 import workpic from "../../public/images/undraw_programming_re_kg9v.svg";
 import lazarus from "../../public/images/lazarus-screenshot.png";
-import molecule from "../../public/images/campez.png";
+import molecule from "../../public/images/molecule-github.png";
 import portfolio from "../../public/images/port-screenshot.png";
 
 const WorkPage = () => {
