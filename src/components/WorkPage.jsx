@@ -3,7 +3,7 @@ import { HiArrowRight } from "react-icons/hi";
 import WorkCard from "./WorkCard";
 import workpic from "../../public/images/undraw_programming_re_kg9v.svg";
 import lazarus from "../../public/images/lazarus-screenshot.png";
-import camp_ez from "../../public/images/campez.png";
+import molecule from "../../public/images/campez.png";
 import portfolio from "../../public/images/port-screenshot.png";
 
 const WorkPage = () => {
@@ -41,7 +41,7 @@ const WorkPage = () => {
             projectName="Camp-EZ"
             description="Changing the way campgrounds manage bookings allowing campers to check availability online and book a site in seconds. Traditionally this industry has continued to use email and calling to book campsites, leaving campers frustrated and confused when it comes to what their getting from the site."
             stackUsed="django - react - tailwind - SQL"
-            image={camp_ez}
+            image={molecule}
             githubLink="https://github.com/cooopmac/campsitemanagementsystem"
             websiteLink=""
           />
