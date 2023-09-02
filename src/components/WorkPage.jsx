@@ -31,16 +31,16 @@ const WorkPage = () => {
         <div className="max-w-lg flex flex-col gap-5 pt-[100px] px-10 md:px-0">
           <WorkCard
             projectName="The Lazarus Method"
-            description="Course and Progress Tracking Web Application for Dr. Ryan Lazarus in California, a Naturopath focused on helping patients improve their health and wellness physically, mentally, and spiritually."
+            description="An in-production software that allows a Natural Medicine Doctor to provide an intuitive and interactive platform to accompany his practice. This app allows users to track their progress and see real-time stats on their health journey. 100+ concurrent users."
             stackUsed="django - css - javascript - chart.js"
             image={lazarus}
             githubLink="https://github.com/justinbather/lazarus-method"
             websiteLink="https://lazarus-method.herokuapp.com/accounts/login/"
           />
           <WorkCard
-            projectName="GoCamp!"
-            description="A fullstack camping application that streamlines the booking process for campgrounds and allows users to easily book campsites utilizing a REST API created by me and a friend, stripe and react for the frontend."
-            stackUsed="django - react - tailwind - postgreSQL"
+            projectName="Camp-EZ"
+            description="Changing the way campgrounds manage bookings allowing campers to check availability online and book a site in seconds. Traditionally this industry has continued to use email and calling to book campsites, leaving campers frustrated and confused when it comes to what their getting from the site."
+            stackUsed="django - react - tailwind - SQL"
             image={molecule}
             githubLink="https://github.com/justinbather/campsitemanagementsystem"
             websiteLink=""
