@@ -66,7 +66,7 @@ const Nav = () => {
           ))}
           <button
             className="px-4 py-2 border border-[#37AA9C] rounded-lg font-normal text-[18px] transition ease-in-out hover:bg-white/[.05]"
-            onClick={() => window.open("../../public/images/resume.png")}
+            onClick={() => window.open("../../public/images/resume.pdf")}
           >
             <p className="text-white">
               <Gradient dir="left-to-right" from="#37AA9C" to="#94F3E4">
