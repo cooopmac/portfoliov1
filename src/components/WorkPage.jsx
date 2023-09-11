@@ -38,12 +38,11 @@ const WorkPage = () => {
             websiteLink="https://lazarus-method.herokuapp.com/accounts/login/"
           />
           <WorkCard
-            projectName="Camp-EZ"
-            description="Changing the way campgrounds manage bookings allowing campers to check availability online and book a site in seconds. Traditionally this industry has continued to use email and calling to book campsites, leaving campers frustrated and confused when it comes to what their getting from the site."
-            stackUsed="django - react - tailwind - SQL"
+            projectName="WeCamp"
+            description="Changing the way campgrounds manage bookings allowing campers to check availability online and book a site in seconds."
             image={molecule}
             githubLink="https://github.com/cooopmac/campsitemanagementsystem"
-            websiteLink=""
+            websiteLink="https://campsite-management.netlify.app/park/1"
           />
           <WorkCard
             projectName="cooper-macgregor.com"
