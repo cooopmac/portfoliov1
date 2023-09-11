@@ -32,7 +32,7 @@ const WorkPage = () => {
           <WorkCard
             projectName="The Lazarus Method"
             description="An in-production software for Dr. Ryan Lazarus that allows users to track their progress and see real-time stats on their health journey. 100+ concurrent users."
-            stackUsed="django - css - javascript - chart.js"
+            stackUsed="django - javascript - chart.js"
             image={lazarus}
             githubLink="https://github.com/justinbather/lazarus-method"
             websiteLink="https://lazarus-method.herokuapp.com/accounts/login/"
@@ -41,6 +41,7 @@ const WorkPage = () => {
             projectName="WeCamp"
             description="Changing the way campgrounds manage bookings allowing campers to check availability online and book a site in seconds."
             image={molecule}
+            stackUsed="django - tailwind - react - stripe"
             githubLink="https://github.com/cooopmac/campsitemanagementsystem"
             websiteLink="https://campsite-management.netlify.app/park/1"
           />
