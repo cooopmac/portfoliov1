@@ -46,7 +46,7 @@ const WorkPage = () => {
             websiteLink="https://campsite-management.netlify.app/park/1"
           />
           <WorkCard
-            projectName="cooper-macgregor.com"
+            projectName="cooper-macgregor"
             description="My portfolio website, created in React and tailwind. My first real react project fully designed and created by me."
             stackUsed="react - tailwind - vite"
             image={portfolio}
